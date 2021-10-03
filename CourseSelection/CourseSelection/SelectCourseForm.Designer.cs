@@ -1,5 +1,5 @@
 ﻿
-namespace Course
+namespace CourseSelection
 {
     partial class SelectCourseForm
     {
