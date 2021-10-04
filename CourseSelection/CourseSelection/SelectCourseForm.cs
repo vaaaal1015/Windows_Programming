@@ -12,17 +12,23 @@ namespace CourseSelection
 {
     public partial class SelectCourseForm : Form
     {
+
         private Model model;
         public SelectCourseForm(Model model)
         {
             InitializeComponent();
             this.model = model;
-            DataGridView dataGridView = CreateDataGridView();
-            dataGridView.Parent = this;
+            SetDataGridView(this.dataGridView1);
+            AddDataGridViewRow(this.dataGridView1);
         }
 
-        private DataGridView CreateDataGridView()
+        /// <summary>
+        /// 自訂DataGrideView
+        /// </summary>
+        /// <param name="dataGridView"></param>
+        private void SetDataGridView(DataGridView dataGridView)
         {
+
             List<String> columnNames = new List<string>
             {
                 "選",
@@ -51,26 +57,12 @@ namespace CourseSelection
                 "實驗實習"
             };
 
-            DataGridView recordDataGridView = new DataGridView
-            {
-                AutoSizeColumnsMode =
-                System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill,
-                ColumnHeadersHeightSizeMode =
-                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize,
-                Name = "recordDGV",
-                ReadOnly = true,
-                RowHeadersVisible = false,
-                Dock = System.Windows.Forms.DockStyle.Top,
-                SelectionMode =
-                System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-            };
-
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn
             {
                 HeaderText = columnNames.FirstOrDefault(),
                 Name = columnNames.FirstOrDefault()
             };
-            recordDataGridView.Columns.Add(checkBoxColumn);
+            dataGridView.Columns.Add(checkBoxColumn);
 
             for (int i = 1; i < columnNames.Count; i++)
             {
@@ -79,10 +71,45 @@ namespace CourseSelection
                     HeaderText = columnNames[i],
                     Name = columnNames[i]
                 };
-                recordDataGridView.Columns.Add(column);
+                dataGridView.Columns.Add(column);
+                dataGridView.Columns[i].ReadOnly = true;
             }
+        }
 
-            return recordDataGridView;
+        private void AddDataGridViewRow(DataGridView dataGridView)
+        {
+            List<Course> courses = model.GetCourseInfo();
+            foreach(Course course in courses)
+            {
+                dataGridView.Rows.Add(
+                new object[]
+                {
+                    false,
+                    course.Number,
+                    course.Name,
+                    course.Stage,
+                    course.Credit,
+                    course.Hour,
+                    course.Type,
+                    course.Teacher,
+                    course.ClassTime[0],
+                    course.ClassTime[1],
+                    course.ClassTime[2],
+                    course.ClassTime[3],
+                    course.ClassTime[4],
+                    course.ClassTime[5],
+                    course.ClassTime[6],
+                    course.Classroom,
+                    course.NumberOfPeople,
+                    course.NumberOfDrop,
+                    course.TA,
+                    course.Language,
+                    course.Syllabus,
+                    course.Note,
+                    course.Additional,
+                    course.Lab
+                });
+            }
         }
     }
 }

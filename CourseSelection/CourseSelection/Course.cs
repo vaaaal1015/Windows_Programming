@@ -8,71 +8,71 @@ namespace CourseSelection
 {
     public class Course
     {
-        public String Number
+        public string Number
         {
             get; set;
         }
-        public String Name
+        public string Name
         {
             get; set;
         }
-        public String Stage
+        public string Stage
         {
             get; set;
         }
-        public String Credit
+        public string Credit
         {
             get; set;
         }
-        public String Hour
+        public string Hour
         {
             get; set;
         }
-        public String Type
+        public string Type
         {
             get; set;
         }
-        public String Teacher
+        public string Teacher
         {
             get; set;
         }
-        public List<String> ClassTime
+        public List<string> ClassTime
         {
             get; set;
         }
-        public String Classroom
+        public string Classroom
         {
             get; set;
         }
-        public String NumberOfPeople
+        public string NumberOfPeople
         {
             get; set;
         }
-        public String NumberOfDrop
+        public string NumberOfDrop
         {
             get; set;
         }
-        public String TA
+        public string TA
         {
             get; set;
         }
-        public String Language
+        public string Language
         {
             get; set;
         }
-        public String Syllabus
+        public string Syllabus
         {
             get; set;
         }
-        public String Note
+        public string Note
         {
             get; set;
         }
-        public String Additional
+        public string Additional
         {
             get; set;
         }
-        public String Lab
+        public string Lab
         {
             get; set;
         }

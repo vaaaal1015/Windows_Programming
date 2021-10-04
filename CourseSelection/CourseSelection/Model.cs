@@ -13,7 +13,7 @@ namespace CourseSelection
         {
             //GetCourseInfo();
         }
-        private List<Course> GetCourseInfo()
+        public List<Course> GetCourseInfo()  
         {
             HtmlWeb webClient = new HtmlWeb();
             webClient.OverrideEncoding = Encoding.Default;

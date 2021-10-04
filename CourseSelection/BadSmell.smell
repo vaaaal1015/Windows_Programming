@@ -620,18 +620,18 @@
             </Smell>
             <Smell>
               <Id>28</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
+              <SmellType>ICS(空白與空行-3)</SmellType>
+              <HashCode>SpacingAndNewLine3</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>28</Line>
+              <Line>82</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Comment>ICS(空白與空行-3) for, foreach, while, switch, if 等關鍵字與左括號之間加一個空白</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
@@ -642,7 +642,7 @@
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>52</Line>
+              <Line>34</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -658,7 +658,7 @@
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>56</Line>
+              <Line>58</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -674,7 +674,7 @@
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>66</Line>
+              <Line>62</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -690,7 +690,7 @@
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>70</Line>
+              <Line>64</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -706,7 +706,7 @@
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>72</Line>
+              <Line>71</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -722,7 +722,7 @@
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>79</Line>
+              <Line>73</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -732,29 +732,13 @@
             </Smell>
             <Smell>
               <Id>35</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>CourseSelection</Project>
-              <File>SelectCourseForm.cs</File>
-              <Line>81</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>36</Id>
               <SmellType>ICS(變數-1)</SmellType>
               <HashCode>Variable1.SelectCourseForm.model</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>15</Line>
+              <Line>16</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -763,14 +747,30 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>37</Id>
+              <Id>36</Id>
               <SmellType>Long method(過長函式)</SmellType>
-              <HashCode>LongMethod.SelectCourseForm.CreateDataGridView.63</HashCode>
+              <HashCode>LongMethod.SelectCourseForm.SetDataGridView.49DataGridView dataGridView;</HashCode>
               <Severity>Red</Severity>
-              <Weight>63</Weight>
+              <Weight>49</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>24</Line>
+              <Line>29</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>37</Id>
+              <SmellType>Long method(過長函式)</SmellType>
+              <HashCode>LongMethod.SelectCourseForm.AddDataGridViewRow.35DataGridView dataGridView;</HashCode>
+              <Severity>Red</Severity>
+              <Weight>35</Weight>
+              <Project>CourseSelection</Project>
+              <File>SelectCourseForm.cs</File>
+              <Line>79</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -780,6 +780,70 @@
             </Smell>
             <Smell>
               <Id>38</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.SelectCourseForm.dataGridView1</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>CourseSelection</Project>
+              <File>SelectCourseForm.Designer.cs</File>
+              <Line>91</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>39</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.SelectCourseForm.button1</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>CourseSelection</Project>
+              <File>SelectCourseForm.Designer.cs</File>
+              <Line>92</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>40</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.SelectCourseForm.button2</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>CourseSelection</Project>
+              <File>SelectCourseForm.Designer.cs</File>
+              <Line>93</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>41</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 AddDataGridViewRow 缺乏註解</SmellType>
+              <HashCode>CourseSelection\CourseSelection.SelectCourseForm.cs.Unresolved warnings(忽視警告)-函式 AddDataGridViewRow 缺乏註解.79</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>CourseSelection\CourseSelection</Project>
+              <File>SelectCourseForm.cs</File>
+              <Line>79</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>42</Id>
               <SmellType>Unresolved warnings(忽視警告)-函式 CourseMapping 缺乏註解</SmellType>
               <HashCode>CourseSelection\CourseSelection.Model.cs.Unresolved warnings(忽視警告)-函式 CourseMapping 缺乏註解.36</HashCode>
               <Severity>Red</Severity>
@@ -795,23 +859,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>39</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 CreateDataGridView 缺乏註解</SmellType>
-              <HashCode>CourseSelection\CourseSelection.SelectCourseForm.cs.Unresolved warnings(忽視警告)-函式 CreateDataGridView 缺乏註解.24</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>CourseSelection\CourseSelection</Project>
-              <File>SelectCourseForm.cs</File>
-              <Line>24</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>40</Id>
+              <Id>43</Id>
               <SmellType>Unresolved warnings(忽視警告)-函式 GetCourseInfo 缺乏註解</SmellType>
               <HashCode>CourseSelection\CourseSelection.Model.cs.Unresolved warnings(忽視警告)-函式 GetCourseInfo 缺乏註解.16</HashCode>
               <Severity>Red</Severity>
@@ -827,7 +875,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>41</Id>
+              <Id>44</Id>
               <SmellType>Unresolved warnings(忽視警告)-函式 Main 缺乏註解</SmellType>
               <HashCode>CourseSelection\CourseSelection.Program.cs.Unresolved warnings(忽視警告)-函式 Main 缺乏註解.12</HashCode>
               <Severity>Red</Severity>
@@ -843,7 +891,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>42</Id>
+              <Id>45</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>16 CourseSelection.Model.GetCourseInfo()</HashCode>
               <Severity>Red</Severity>
@@ -859,7 +907,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>43</Id>
+              <Id>46</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>36 CourseSelection.Model.CourseMapping(HtmlAgilityPack.HtmlNodeCollection)</HashCode>
               <Severity>Red</Severity>
@@ -875,23 +923,23 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>44</Id>
+              <Id>47</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>24 CourseSelection.SelectCourseForm.CreateDataGridView()</HashCode>
+              <HashCode>79 CourseSelection.SelectCourseForm.AddDataGridViewRow(System.Windows.Forms.DataGridView)</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>CourseSelection</Project>
               <File>SelectCourseForm.cs</File>
-              <Line>24</Line>
+              <Line>79</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>CourseSelection.SelectCourseForm.CreateDataGridView()</Comment>
+              <Comment>CourseSelection.SelectCourseForm.AddDataGridViewRow(System.Windows.Forms.DataGridView)</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>45</Id>
+              <Id>48</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>12 CourseSelection.Program.Main(string[])</HashCode>
               <Severity>Red</Severity>
@@ -907,7 +955,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>46</Id>
+              <Id>49</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>31 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNodeCollection，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNodeCollection.Count 以及 HtmlAgilityPack.HtmlNodeCollection.RemoveAt(int)</HashCode>
               <Severity>Warning</Severity>
@@ -923,7 +971,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>47</Id>
+              <Id>50</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>46 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -939,7 +987,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>48</Id>
+              <Id>51</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>47 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -955,7 +1003,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>49</Id>
+              <Id>52</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>48 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -971,7 +1019,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>50</Id>
+              <Id>53</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>49 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -987,7 +1035,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>51</Id>
+              <Id>54</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>50 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1003,7 +1051,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>52</Id>
+              <Id>55</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>51 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1019,7 +1067,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>53</Id>
+              <Id>56</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>52 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1035,7 +1083,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>54</Id>
+              <Id>57</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>62 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：14次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText 以及 HtmlAgilityPack.HtmlNode.InnerText 以及 HtmlAgilityPack.HtmlNode.InnerText 以及 HtmlAgilityPack.HtmlNode.InnerText 以及 HtmlAgilityPack.HtmlNode.InnerText 以及 HtmlAgilityPack.HtmlNode.InnerText 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Red</Severity>
@@ -1051,7 +1099,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>55</Id>
+              <Id>58</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>63 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1067,7 +1115,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>56</Id>
+              <Id>59</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>64 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1083,7 +1131,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>57</Id>
+              <Id>60</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>65 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1099,7 +1147,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>58</Id>
+              <Id>61</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>66 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1115,7 +1163,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>59</Id>
+              <Id>62</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>67 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1131,7 +1179,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>60</Id>
+              <Id>63</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>68 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1147,7 +1195,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>61</Id>
+              <Id>64</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>69 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1163,7 +1211,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>62</Id>
+              <Id>65</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>70 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1179,7 +1227,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>63</Id>
+              <Id>66</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>71 目前物件 CourseSelection.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 HtmlAgilityPack.HtmlNode，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：HtmlAgilityPack.HtmlNode.ChildNodes 以及 HtmlAgilityPack.HtmlNode.InnerText</HashCode>
               <Severity>Warning</Severity>
@@ -1231,7 +1279,7 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>348</ProductionLoc>
+          <ProductionLoc>423</ProductionLoc>
           <TestLoc>0</TestLoc>
         </CodeReview>
       </Data>
