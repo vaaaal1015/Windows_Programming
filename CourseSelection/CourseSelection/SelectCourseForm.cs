@@ -60,7 +60,7 @@ namespace CourseSelection
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn
             {
                 HeaderText = columnNames.FirstOrDefault(),
-                Name = columnNames.FirstOrDefault()
+                Name = columnNames.FirstOrDefault(),
             };
             dataGridView.Columns.Add(checkBoxColumn);
 
@@ -73,6 +73,26 @@ namespace CourseSelection
                 };
                 dataGridView.Columns.Add(column);
                 dataGridView.Columns[i].ReadOnly = true;
+            }
+
+            dataGridView.CellValueChanged += CellValueChanged;
+            dataGridView.CellMouseUp += OnMouseUp;
+        }
+
+        private void CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                model.checkedCounter((bool)dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
+                button1.Enabled = model.IsChecked();
+            }
+        }
+
+        private void OnMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if(e.ColumnIndex == 0 && e.RowIndex != -1)
+            {
+                dataGridView1.EndEdit();
             }
         }
 

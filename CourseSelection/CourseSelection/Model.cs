@@ -9,10 +9,13 @@ namespace CourseSelection
 {
     public class Model
     {
+        private int _numberOfchecked;
+
         public Model()
         {
-            //GetCourseInfo();
+            _numberOfchecked = 0;
         }
+
         public List<Course> GetCourseInfo()  
         {
             HtmlWeb webClient = new HtmlWeb();
@@ -73,6 +76,24 @@ namespace CourseSelection
                 courses.Add(course);
             }
             return courses;
+        }
+
+        public void checkedCounter(bool boolen)
+        {
+            if (boolen)
+            {
+                _numberOfchecked++;
+            }
+            else if(_numberOfchecked > 0)
+            {
+                _numberOfchecked--;
+            }
+            Console.WriteLine(_numberOfchecked);
+        }
+
+        public bool IsChecked()
+        {
+            return _numberOfchecked > 0;
         }
     }
 }
