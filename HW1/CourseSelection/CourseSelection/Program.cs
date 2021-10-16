@@ -9,6 +9,10 @@ namespace CourseSelection
 {
     class Program
     {
+        /// <summary>
+        /// 進入點
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Model model = new Model();

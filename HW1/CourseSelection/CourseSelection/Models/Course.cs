@@ -52,7 +52,7 @@ namespace CourseSelection
         {
             get; set;
         }
-        public string TA
+        public string TeachingAssistant
         {
             get; set;
         }
